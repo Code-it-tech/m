@@ -6,3 +6,8 @@ s3client = boto3.client('s3')
 bucket_name = "python-sdk-sample11"
 print('Creating new bucket {}'.format(bucket_name))
 s3client.create_bucket(Bucket=bucket_name)
+
+bucket_list = s3client.list_buckets()
+for bucket in bucket_list["Buckets"]:
+   if bucket['Name'] == bucket_name:
+       print("I just Created a new bucket named:{} at {}".format(bucket['Name'],bucket['CreationDate']))
