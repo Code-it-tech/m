@@ -3,6 +3,7 @@
 import boto3
 
 s3client = boto3.client('s3')
+
 bucket_name = "python-sdk-sample11"
 print('Creating new bucket {}'.format(bucket_name))
 s3client.create_bucket(Bucket=bucket_name)
@@ -20,3 +21,8 @@ print("Uploaded the PDF: {} succesfully to {}".format(object_key,bucket_name))
 
 url = s3client.generate_presigned_url('get_object', {'Bucket': bucket_name,'Key': object_key})
 print("Try this URL {}".format(url))
+
+s3resource = boto3.resource('s3')
+bucket = s3resource.Bucket(bucket_name)
+
+https://github.com/aws-samples/aws-python-sample/blob/master/s3_sample.py
