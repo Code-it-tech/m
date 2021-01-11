@@ -16,3 +16,19 @@ application.add_url_rule('/<username>', 'hello', (lambda username:  header_text 
 if __name__ == "__main__":
    application.debug = True
    application.run()
+
+
+def square(num):
+      result = num ** 2
+      return result
+square(3)
+
+def square(num): 
+    return num ** 2  
+square(3)
+
+def square(num): return num ** 2  
+square(3)
+
+square = lambda num: num ** 2  
+square(3)

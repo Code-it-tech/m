@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<catalog>
+   <book id="bk109">
+      <author>Author1</author>
+      <title>Automate Infra Part 2</title>
+      <genre>Science Fiction</genre>
+      <price>6.95</price>
+      <publish_date>2000-11-02</publish_date>
+      <description>book1</description>
+   </book>
+   <book id="bk112">
+      <author>Author2</author>
+      <title>Automate Infra Part 1</title>
+      <genre>Computer</genre>
+      <price>49.95</price>
+      <publish_date>2001-04-16</publish_date>
+      <description>book2</description>
+   </book>
+</catalog>

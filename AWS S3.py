@@ -25,4 +25,4 @@ print("Try this URL {}".format(url))
 s3resource = boto3.resource('s3')
 bucket = s3resource.Bucket(bucket_name)
 
-https://github.com/aws-samples/aws-python-sample/blob/master/s3_sample.py
+# https://github.com/aws-samples/aws-python-sample/blob/master/s3_sample.py
